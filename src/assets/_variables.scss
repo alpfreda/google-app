@@ -1,0 +1,77 @@
+$bg-color: #eee !default;
+$base-color: #333 !default;
+$base-font-size: 0.875rem !default;
+$font-family: Roboto, arial !default;
+
+$active-color: #689f38 !default;
+
+$xs: 0 !default;
+$sm: 576px !default;
+$md: 768px !default;
+$lg: 992px !default;
+$xl: 1200px !default;
+
+$container-max-width: 75rem;
+$container-padding: 0 2rem;
+
+$navbar-bg-color: #fff !default;
+$navbar-fore-color: #737372 !default;
+$navbar-height: 3rem !default;
+$navbar-gap: 0.3rem !default;
+$navbar-item-padding: 0.5rem 0.7rem !default;
+$navbar-border-bottom-size: 3px !default;
+$navbar-active-border-color: $active-color !default;
+$navbar-active-fore-color: #333 !default;
+$navbar-hover-bg-color: #f5f5f5 !default;
+$navbar-main-item-font-size: 2rem !default;
+
+$navbar-splitter-bg-color: #d6d6d6 !default;
+$navbar-splitter-height: 1.8rem !default;
+$navbar-splitter-margin: 0.5rem auto 0.25rem !default;
+$navbar-splitter-width: 1px !default;
+
+$navbar-item-dropdown-icon-img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAQAAACR313BAAAAaElEQVR4AWP4jxfSXjqXrygzVwYhmClYmJUlAZcuqiz+X/w4VxkimS1cdKH4f9EcuHShbvEHiAK45K9CNyS7880hCvKMIZLFATC7URX8hEkipBEKvgMV/IVKYnqsMKL4ZVElHUMNLwQAZCvi2TxdGw0AAAAASUVORK5CYII=" !default;
+$navbar-item-dropdown-icon-height: 1rem !default;
+$navbar-item-dropdown-icon-margin: 0.5rem 0 0 0.5rem !default;
+$navbar-item-dropdown-icon-width: 1rem !default;
+
+$navbar-item-btn-icon-height: 1.313rem !default;
+$navbar-item-btn-icon-width: 1.313rem !default;
+
+$navbar-item-btn-setting-icon-img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAAw0lEQVR4Ab3SPU6CQRAG4Ad6iH6egZIL6GkoaMQriJ3BM/hzAs6DDSQWxgoLDYV/+dbEbCbTECIFz3STdzeT2XUgI+WvRnZ6qNF7W3QNdHBmVaNLp+gY6MpMFAtzrRLVmlsoJpLGOkc85yPWGmEa7W8zDU7c+InuVBha1ua1YBZTDyV974rWEaHnQ/GmD9mX4gXZk+IT9rj1X7NeyRvooSdv4FJovCpRGysbea/Hkostr/WoON/7Dwh3NXprp3GNjh3EL96FjlMUNsVTAAAAAElFTkSuQmCC" !default;
+$navbar-item-btn-question-icon-img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAAmUlEQVR4Ab2T7QmEQAwFp4QtYUu4Aq4IS9jSLCUlWMAVYQc55fQRHizcLzMgBIZoPiT/5gGVQSgJxkSls5HGRncVXuxVEjvd1Ltiy8gzIpsqVxXGlf3ES+ZmVFXNnPE+OENqVDUruJpS6WSlfoCrzVS1ZaoeQi8X3tac8GGJzwHCh9Xmqq9gISf4YllNmJ8LwcpC8yN84i/4Atxdv7BI3MwDAAAAAElFTkSuQmCC" !default;
+
+$headline-margin: 0 0 0.5rem !default;
+$headline-padding: 0 0.3rem !default;
+$headline-text-font-size: 1.75rem !default;
+$headline-text-font-weight: 400 !default;
+$headline-sub-text-font-size: 1rem !default;
+$headline-sub-text-fore-color: #777 !default;
+$headline-btn-bg-color: #689f38 !default;
+$headline-btn-border-color: #689f38 !default;
+$headline-btn-border-color: #689f38 !default;
+$headline-btn-border-radius: 0.3rem !default;
+$headline-btn-border-size: 0.9rem !default;
+$headline-btn-border-padding: 0.3rem 0.7rem !default;
+$headline-btn-border-fore-color: #fff !default;
+
+$card-box-bg-color: #fff !default;
+$card-box-margin: 5px !default;
+$card-box-width: 9.5rem !default;
+$card-box-xs-width: calc(50% - 10px) !default;
+$card-box-sm-width: calc(33% - 9px) !default;
+$card-box-md-width: calc(25% - 10px) !default;
+$card-box-lg-width: calc(16% - 3.5px) !default;
+$card-box-price-color: #33691e !default;
+$card-box-padding: 0.5rem !default;
+$card-box-title-font-size: 1rem !default;
+$card-box-title-fore-color: #333 !default;
+$card-box-sub-title-fore-color: #777 !default;
+$card-box-sib-title-font-size: 0.8rem !default;
+$card-box-pic-max-height: 10rem !default;
+$card-box-rating-size: 0.625rem !default;
+$card-box-rating-empty-img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAoUlEQVR4AWNAB7dv39a+c+eOMQMhcPPmzdlAvBhVFNM00Vu3bn0HKvz14MEDSRRJkDVABX5AnAJUtBqo6D8IA9lrgDgPyM4BykWDTHEHcj6BJFEwQsN7IG0GNhXIMQBynmJR+BZokBG6JyLQFQIVtSGrgZlai8XaTRgKoR75DKRzgSYlA9mvgexH2BROuHv3rhyM//jxYyGg2Iz79+8LgPgAWIi+JMqA+1MAAAAASUVORK5CYII=" !default;
+$card-box-rating-full-img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAn0lEQVR4AWNAB+Xl5drFxcXGDIQAUNHskpKSxXgVVVZWigIVfQcq/lVVVSWJboJxWVmZX2lpaQpQ0Wog/z8IA9lrgDgPiHOA8tEgN7kDOZ9Akjjwe6BCM7CpQNMMgIqfYlH0FihnhOIEoMIIdIVAsTaQHLrCWiwKN2EohHrkM9CqXCA7Gch+DcSPsIXfBKDH5GD8hoYGIaCGGUBaAMQHAMs6d9dLo6HcAAAAAElFTkSuQmCC" !default;
+
+$error-alert-fore-color: red !default;
+$error-alert-min-height: 15rem !default;

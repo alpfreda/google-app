@@ -1,0 +1,108 @@
+.navbar {
+  box-shadow: 0 1px 0 rgb(0 0 0 / 5%);
+  background: $navbar-bg-color;
+  height: $navbar-height;
+  position: relative;
+  color: $navbar-fore-color;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: $navbar-gap;
+    .item {
+      position: relative;
+      height: $navbar-height;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      padding: $navbar-item-padding;
+      border-bottom: $navbar-border-bottom-size solid transparent;
+      transition: 0.3s ease-in-out all;
+      &.active {
+        border-bottom-color: $navbar-active-border-color;
+        font-weight: 500;
+        color: $navbar-active-fore-color;
+      }
+      &:hover {
+        background: $navbar-hover-bg-color;
+      }
+      &.main-item {
+        font-size: $navbar-main-item-font-size;
+        font-weight: 300;
+      }
+      &.splitter-item {
+        background: $navbar-splitter-bg-color;
+        display: inline-block;
+        height: $navbar-splitter-height;
+        margin: $navbar-splitter-margin;
+        padding: 0;
+        width: $navbar-splitter-width;
+      }
+      .item-dropdown-icon {
+        background-image: url($navbar-item-dropdown-icon-img);
+        background-position-y: center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin: $navbar-item-dropdown-icon-margin;
+        height: $navbar-item-dropdown-icon-height;
+        width: $navbar-item-dropdown-icon-width;
+        &.small {
+          margin: 0.2rem 0 0 0.5rem;
+        }
+      }
+
+      &.hidden-sm {
+        @media screen and (max-width: $md) {
+          display: none;
+        }
+      }
+      &.hidden-xs {
+        @media screen and (max-width: $sm) {
+          display: none;
+        }
+      }
+    }
+
+    .navbar-btn {
+      border-radius: 4px;
+      box-shadow: 0 1px 0 rgb(0 0 0 / 5%);
+      transition: all 0.2s;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.17);
+      color: #737373;
+      cursor: pointer;
+      padding: 0.2rem 0.5rem;
+      text-align: center;
+      &.navbar-setting-btn {
+        padding: 0.2rem 1rem;
+      }
+
+      &:active {
+        box-shadow: inset 0 0 0 1px rgb(0 0 0 / 27%), inset 0 2px 0 #d6d6d6;
+        background-color: #e5e5e5;
+      }
+
+      &:hover {
+        box-shadow: 0 1px 0 0 rgb(0 0 0 / 27%);
+        cursor: pointer;
+      }
+
+      .navbar-setting-icon,
+      .navbar-question-icon {
+        background-size: contain;
+        background-image: url($navbar-item-btn-question-icon-img);
+        background-position-y: center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: $navbar-item-btn-icon-height;
+        width: $navbar-item-btn-icon-width;
+      }
+
+      .navbar-setting-icon {
+        background-image: url($navbar-item-btn-setting-icon-img);
+      }
+    }
+  }
+}

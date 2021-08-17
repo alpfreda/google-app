@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap");
+
+body {
+  background: $bg-color;
+  color: $base-color;
+  font-family: $font-family;
+  font-size: $base-font-size;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 5px;
+}
+
+.container {
+  padding: $container-padding;
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
+
+.mr-auto {
+  margin-left: auto;
+}
+
+.error-alert {
+  text-align: center;
+  color: $error-alert-fore-color;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: $error-alert-min-height;
+}

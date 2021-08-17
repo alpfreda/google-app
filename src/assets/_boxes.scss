@@ -1,0 +1,167 @@
+.headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: $headline-margin;
+  padding: $headline-padding;
+
+  .headline-text {
+    font-size: $headline-text-font-size;
+    font-weight: $headline-text-font-weight;
+  }
+
+  .headline-sub-text {
+    color: $headline-sub-text-fore-color;
+    font-size: $headline-sub-text-font-size;
+  }
+
+  .headline-btn {
+    background: $headline-btn-bg-color;
+    border: 1px solid $headline-btn-border-color;
+    border-radius: $headline-btn-border-radius;
+    font-size: $headline-btn-border-size;
+    font-weight: bold;
+    cursor: pointer;
+    padding: $headline-btn-border-padding;
+    color: $headline-btn-border-fore-color;
+
+    &:hover {
+      background: darken($headline-btn-bg-color, 10%);
+    }
+    &:active {
+      background: darken($headline-btn-bg-color, 20%);
+    }
+  }
+}
+
+.cards-box {
+  margin-top: 2rem;
+
+  .cards-inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card-box {
+    box-shadow: 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 2px 1px -1px rgb(0 0 0 / 12%), 0px 1px 3px 0px rgb(0 0 0 / 20%);
+    background: $card-box-bg-color;
+    border-radius: 2px;
+    margin: $card-box-margin;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: $card-box-width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $xs) {
+      width: $card-box-xs-width;
+    }
+    @media screen and (min-width: $sm) {
+      width: $card-box-sm-width;
+    }
+    @media screen and (min-width: $md) {
+      width: $card-box-md-width;
+    }
+    @media screen and (min-width: $lg) {
+      width: $card-box-lg-width;
+    }
+
+    .blur {
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0%, rgba(255, 255, 255, 0)),
+        color-stop(100%, rgba(255, 255, 255, 1))
+      );
+      background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#00ffffff',EndColorStr='#ffffff');
+      bottom: 0;
+      height: 25px;
+      max-height: 100%;
+      pointer-events: none;
+      position: absolute;
+      right: 0;
+      width: 60px;
+    }
+
+    .card-item-header {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding: $card-box-padding;
+
+      &::before {
+        content: " ";
+        transition: all 0.25s ease;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+
+    .card-item-body {
+      position: relative;
+      width: 100%;
+      padding: $card-box-padding;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-item-title {
+      font-size: $card-box-title-font-size;
+      color: $card-box-title-fore-color;
+      font-weight: 300;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .card-item-sub-title {
+      color: $card-box-sub-title-fore-color;
+      font-size: $card-box-sib-title-font-size;
+      margin-top: 0.3rem;
+      white-space: nowrap;
+    }
+
+    .card-item-pic {
+      max-width: 100%;
+      max-height: $card-box-pic-max-height;
+    }
+
+    .card-item-footer {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: $card-box-padding;
+    }
+
+    .card-item-ratings-item {
+      height: $card-box-rating-size;
+      width: $card-box-rating-size;
+      display: inline-block;
+      text-align: left;
+      margin: 0 2px;
+      position: relative;
+      background: url($card-box-rating-empty-img) no-repeat left;
+      &.full {
+        background: url($card-box-rating-full-img) no-repeat left;
+      }
+    }
+
+    .card-item-price {
+      color: $card-box-price-color;
+    }
+  }
+}
